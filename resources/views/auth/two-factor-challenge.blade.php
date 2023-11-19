@@ -4,9 +4,13 @@
             <x-authentication-card-logo />
         </x-slot>
 
+        <div class="mb-4">
+            <img src="{{ asset('images/1.png') }}" alt="Your Image Alt Text">
+        </div>
+
         <div x-data="{ recovery: false }">
             <div class="mb-4 text-sm text-gray-600" x-show="! recovery">
-                {{ __('Please confirm access to your account by entering the authentication code provided by your authenticator application.') }}
+                {{ __('Please confirm access to your account by entering the authentication code provided by Google authenticator.') }}
             </div>
 
             <div class="mb-4 text-sm text-gray-600" x-cloak x-show="recovery">
